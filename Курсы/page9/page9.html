@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../null.css">
+    <link rel="stylesheet" href="../footer-header.css">
+    <link rel="stylesheet" href="../allStyle.css">
+    <link rel="stylesheet" href="../../animations.css">
+    <link rel="icon" href="../../img/logo.svg">
+
+    <title>FRONTDEV - Курс 9</title>
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <div class="cont2">
+                <a href="../../index.html"><h1 class="logo josefin">FRONTDEV</h1></a>
+                <div class="progress-bar menu">
+                    <p>Ваш прогресс</p>
+                    <div class="squares">
+                        <a href="../page1/page1.html"><div class="square color">1</div></a>
+                        <a href="../page2/page2.html"><div class="square color">2</div></a>
+                        <a href="../page3/page3.html"><div class="square color">3</div></a>
+                        <a href="../page4/page4.html"><div class="square color">4</div></a>
+                        <a href="../page5/page5.html"><div class="square color">5</div></a>
+                        <a href="../page6/page6.html"><div class="square color">6</div></a>
+                        <a href="../page7/page7.html"><div class="square color">7</div></a>
+                        <a href="../page8/page8.html"><div class="square color">8</div></a>
+                        <a href="../page9/page9.html"><div class="square color">9</div></a>
+                        <a href="../page10/page10.html"><div class="square">10</div></a>
+                    </div>
+                </div>
+    
+                <a href="../../index.html" class="glav">Главная</a>
+                <button class="hamburger navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="../../img/menu.png" alt="bars">
+                </button>
+                
+            
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <img src="../../img/light.png" alt="back" class="background" >
+        <img src="../../img/light.png" alt="back" class="background" style="top: 180%;">
+        <img src="../../img/light.png" alt="back" class="background" style="top: 280%;">
+        <div class="container">
+            <h1 class="title slide-in">9. Применение полученных навыков</h1>
+            <div class="texts slide-in1" >
+                <p class="text">Для начала зайдём в Visual Studio Code и создадим новую папку, в которой будет наш сайт, затем нажмём на иконку листа с плюсиком и создадим два новых файла index.html для разметки и style.css для стилей.</p>
+
+            </div>
+
+            <div class="middle slide-in2" style="margin-top: 30px;"><div class="middle2"><img src="../../img/site1.png" alt="verstka" class="img-middle" style="max-width: 550px;"></div>
+               
+            </div>
+
+            <div class="texts slide-in2" style="margin-top: 10px;">
+                <p class="text" >Далее, в файле index.html с помощью сочетания клавиш Shift + 1 создадим структуру Html документа. Поменяем название в теге &lt;title&gt; на “Мой первый сайт” и подключим файл с нашими стилями с помощью тега &lt;link&gt;. Затем зададим базовую структура из header, main, footer. </p>
+            </div>
+
+            <div class="middle slide-in2" style="margin-top: 30px;"><div class="middle2"><img src="../../img/site2.png" alt="verstka" class="img-middle" style="max-width: 800px;"></div>
+                <p class="text cent slide-in10" style="margin-bottom: 30px;">INDEX.HTML</p>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Переходим в файл style.css. В нём пишем *, это означает, что все стили, написанные в фигурных скобках будут применяться к каждому элементу на странице. В данном случае это просто небольшие обнуляющие все отступы стили. Далее зададим свойства контейнеру. Сделаем ему ширину 90% и максимальную ширину 1200px, а также выровняем по центру страницы.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;"><div class="middle2"><img src="../../img/site3.png" alt="verstka" class="img-middle" style="max-width: 550px;"></div>
+                <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Затем зададим стили для <span class="purple">body</span>, <span class="purple">main</span> и <span class="purple">container</span> для main.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site4.png" alt="verstka" class="img-middle" style="max-width: 720px; max-height: 666px;">
+                </div>
+                <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Далее верстаем <span class="purple">header</span>.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex">
+                    <div>
+                        <img src="../../img/site5.png" alt="verstka" class="img-middle" style="max-width: 705px; max-height: 270px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">INDEX.HTML</p>
+                    </div>
+                    <div>
+                        <img src="../../img/site5-1.png" alt="verstka" class="img-middle" style="max-width: 352px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Для того, чтобы вставить картинку в <span class="purple">header</span> нужно создать внутри проекта папку img (нажать на папку с плюсиком) и загрузить туда картинку, а затем прописать путь к ней в вёрстке, как показано на 5 строчке на скрине слева.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site10.png" alt="verstka" class="img-middle" style="max-width: 600px; max-height: 292px;">
+                </div>
+                
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">У нас должен получиться вот такой вот <span class="purple">header</span>.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site11.png" alt="verstka" class="img-middle" style="max-width: 1255px; max-height: 80px;">
+                </div>
+                
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Далее прописываем <span class="purple">main.</span> Добавляем класс <span class="purple">container</span>.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site12.png" alt="verstka" class="img-middle" style="max-width: 1213px; max-height: 282px;">
+                </div>
+                <p class="text cent slide-in10" style="margin-bottom: 30px;">INDEX.HTML</p>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Пропишем стили для <span class="purple">main</span>, <span class="purple">container</span> и для картинок. Также добавим анимации.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex">
+                    <div>
+                        <img src="../../img/site13.png" alt="verstka" class="img-middle" style="max-width: 406px; max-height: 370px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+                    </div>
+                    <div>
+                        <img src="../../img/site13-1.png" alt="verstka" class="img-middle" style="max-width: 509px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Добавляем стили для кнопки <span class="purple">.cta.button</span>.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site14.png" alt="verstka" class="img-middle" style="max-width: 578px; max-height: 542px;">
+                </div>
+                <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">У нас должна получиться главная <span class="purple">(main)</span> часть сайта.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site15.png" alt="verstka" class="img-middle" style="max-width: 723px; max-height: 759px;">
+                </div>
+              
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Теперь нам нужно сделать небольшой <span class="purple">footer</span>, самую нижнюю часть сайта.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex">
+                    <div>
+                        <img src="../../img/site16.png" alt="verstka" class="img-middle" style="max-width: 555px; max-height: 115px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">INDEX.HTML</p>
+                    </div>
+                    <div>
+                        <img src="../../img/site16-1.png" alt="verstka" class="img-middle" style="max-width: 419px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Не забываем прописать логику анимации, чтобы они работали.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site17.png" alt="verstka" class="img-middle" style="max-width: 315px; max-height: 224px;">
+                </div>
+              
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Но это еще не всё, ведь нужно этот сайт адаптировать, чтобы он корректно отображался на всех устройствах. Сейчас он будет правильно отображаться только на ПК. Для адаптации сайта мы будем использовать <span class="purple">@media</span> запросы. Пишем <span class="purple">@media(max-width: 850px)</span> - в скобках указываем от какой ширины будут приниматься стили прописанные внутри <span class="purple">@media</span> запросы, если ширина будет больше, то будут работать основные стили(которые вы прописали до этого, вне <span class="purple">@media</span> запроса). Важно уточнить, что <span class="purple">@media</span> запросы обязательно писать в самом низу css файла, иначе они не будут работать.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex">
+                    <div>
+                        <img src="../../img/site18.png" alt="verstka" class="img-middle" style="max-width: 389px; max-height: 402px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+                    </div>
+                    <div>
+                        <img src="../../img/site18-1.png" alt="verstka" class="img-middle" style="max-width: 389px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+                    </div>
+                    <div>
+                        <img src="../../img/site18-2.png" alt="verstka" class="img-middle" style="max-width: 389px;">
+                        <p class="text cent slide-in10" style="margin-bottom: 30px;">STYLE.CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">С добавлением <span class="purple">@media</span> запросов на 3 контрольные точки наш сайт будет работать и отображаться хорошо на всех устройствах!</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;">
+                <div class="middle2 flex"><img src="../../img/site19.png" alt="verstka" class="img-middle" style="max-width: 608px; max-height: 943px;">
+                </div>
+              
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Если хотите опробовать свои силы, то предлагаем выполнить самостоятельное задание - самостоятелно добавить 3 кнопки с анимацией на ваш сайт, как на <span class="purple">7 курсе</span>!</p>
+            </div>
+
+           
+            <div class="button-container slide-in10">
+                <button class="animated-button button-1">Наведи на меня 1</button>
+                <button class="animated-button button-2">Наведи на меня 2</button>
+                <button class="animated-button button-3">Наведи на меня 3</button>
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">Затем, чтобы посмотреть свой сайт, устанавливаем расширение Live Server и в правом нижнем углу экрана нажимаем кнопку Go Live. При этом вы должны находиться в файле index.html. Ваш сайт откроется в браузере.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;"><div class="middle2"><div class="flex2"><img src="../../img/site7.png" alt="verstka" class="img-middle" style="max-width: 532px; ">
+                <img src="../../img/site7-1.png" alt="verstka" class="img-middle" style="max-width: 150px;"></div></div>
+               
+            </div>
+
+            <div class="texts slide-in9" style="margin-top: 10px;">
+                <p class="text">У вас должно получиться вот так, как на картинке. Если всё совпадает, то поздравляем, Вы сделали свой первый сайт.</p>
+            </div>
+
+            <div class="middle slide-in10" style="margin-top: 30px;"><div class="middle2" style="margin-bottom: -20px;"><img src="../../img/site8.png" alt="verstka" class="img-middle" style="max-width: 1250px;">
+                </div>
+               
+            </div>
+
+            <div id="overlay" class="overlay"></div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" >&times;</span>
+                        <h3 class="h3">Поздравляем с успешным окончанием курса!</h3>
+                      
+                        <p>Мы надеемся, что наш курс вам очень понравился. За время курса вы познакомились с html и css, получили немного теории о адаптивности сайта и научились публиковать страничку в интернет, а самое главное сделали свой первый сайт! Все полученные на курсе навыки обязательно пригодятся вам для дальнейшей работы в сфере IT.</p>
+                        <div class="div-button" style="margin-top: 20px;">
+                            <a href="../../index.html" class="button">Покинуть курс <img src="../../img/arrow.png" alt="arrow" class="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+       
+            
+                <div class="div-button slide-in9" style="margin-top: 50px;">
+                    <a href="../../Курсы/page10/page10.html" class="button">Следующий шаг <img src="../../img/arrow.png" alt="arrow" class="arrow"></a>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <a href="../../index.html" class="josefin footer-frontdev">FRONTDEV</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const btn = document.getElementById("navbar-toggler");
+    const menus = document.querySelectorAll(".menu");
+    
+    btn.addEventListener('click', () => {
+        for (let el of menus) {
+            if (el.classList.contains("show")) {
+                // Если меню открыто, добавляем класс для анимации закрытия
+                el.classList.remove("show");
+                el.classList.add("slide-out");
+                
+                // Удаляем класс slide-out после завершения анимации
+                setTimeout(() => {
+                    el.classList.remove("slide-out");
+                }, 300); // Время анимации
+            } else {
+                // Если меню закрыто, добавляем класс show для анимации открытия
+                el.classList.add("show");
+            }
+        }
+    });
+
+
+    
+    const modal = document.getElementById("myModal");
+const overlay = document.getElementById("overlay");
+const btn1 = document.getElementById("open");
+const span = document.getElementsByClassName("close")[0];
+
+btn1.onclick = function() {
+    modal.style.display = "block"; // Показываем модальное окно
+    overlay.style.display = "block"; // Показываем затемнение
+    document.body.style.overflow = "hidden";
+}
+
+span.onclick = function() {
+    modal.style.display = "none"; // Скрываем модальное окно
+    overlay.style.display = "none"; // Скрываем затемнение
+    document.body.style.overflow = "visible";
+}
+
+overlay.onclick = function() {
+    modal.style.display = "none"; // Скрываем модальное окно
+    overlay.style.display = "none"; // Скрываем затемнение
+    document.body.style.overflow = "visible";
+}
+
+// Закрыть модальное окно при нажатии "ESC"
+window.onclick = function(event) {
+    if (event.target == overlay) {
+        modal.style.display = "none"; // Скрываем модальное окно
+        overlay.style.display = "none"; // Скрываем затемнение
+        document.body.style.overflow = "visible";
+    }
+}
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+
+    var elements = document.querySelectorAll('.slide-in9');
+
+
+    for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var position = element.getBoundingClientRect();
+
+
+    if (position.top < window.innerHeight) {
+    element.classList.add('appear');
+    }
+}
+});
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+
+    var elements = document.querySelectorAll('.slide-in10');
+
+
+    for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var position = element.getBoundingClientRect();
+
+
+    if (position.top < window.innerHeight) {
+    element.classList.add('appear');
+    }
+}
+});
+</script>
+
+</body>
+</html>

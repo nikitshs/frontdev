@@ -1,0 +1,96 @@
+.slide-in {
+    opacity: 0;
+    transform: translateY(-40%);
+    animation: slideIn 0.6s forwards;
+}
+
+.slide-in1 {
+    opacity: 0;
+    transform: translateY(-40%);
+    animation: slideIn 0.6s forwards;
+    animation-delay: 0.1s;
+}
+
+.slide-in2 {
+    opacity: 0;
+    transform: translateY(-10%);
+    animation: slideIn 0.5s forwards;
+    animation-delay: 0.1s; 
+}
+
+.slide-in3 {
+    opacity: 0;
+    transform: translateX(-40%);
+    animation: slideIn 1.3s forwards;
+    animation-delay: 0.7s; 
+}
+
+.slide-in4 {
+    opacity: 0;
+    transform: translateX(-40%);
+    animation: slideIn 1.4s forwards;
+    animation-delay: 0.8s; 
+}
+
+.slide-in5 {
+    opacity: 0.6;
+    transform: translateX(40%);
+    animation: slideIn 1.5s forwards; 
+}
+
+.slide-in6 {
+    opacity: 0;
+    animation: slideIn 2s forwards 1.5s; 
+}
+
+.slide-in7 {
+    opacity: 0;
+    animation: slideIn 1.8s forwards 1s; 
+}
+
+.slide-in8 {
+    opacity: 0.6;
+    transform: translateX(40%);
+    animation: slideIn 1.5s forwards; 
+}
+
+.slide-in9 {
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: all 0.6s;
+}
+
+.slide-in10 {
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: all 0.5s;
+}
+
+.slide-in11 {
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 1.5s;
+}
+
+.slide-in9.appear {
+    transform: translateX(0%);
+    opacity: 100%;
+}
+
+.slide-in10.appear {
+    transform: translateX(0%);
+    opacity: 100%;
+}
+
+.slide-in11.appear {
+    opacity: 100%;
+    transform: translateX(0%);
+}
+
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

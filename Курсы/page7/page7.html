@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../null.css">
+    <link rel="stylesheet" href="../footer-header.css">
+    <link rel="stylesheet" href="../allStyle.css">
+    <link rel="stylesheet" href="../../animations.css">
+    <link rel="icon" href="../../img/logo.svg">
+
+    <title>FRONTDEV - Курс 7</title>
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <div class="cont2">
+                <a href="../../index.html"><h1 class="logo josefin">FRONTDEV</h1></a>
+                <div class="progress-bar menu">
+                    <p>Ваш прогресс</p>
+                    <div class="squares">
+                        <a href="../page1/page1.html"><div class="square color">1</div></a>
+                        <a href="../page2/page2.html"><div class="square color">2</div></a>
+                        <a href="../page3/page3.html"><div class="square color">3</div></a>
+                        <a href="../page4/page4.html"><div class="square color">4</div></a>
+                        <a href="../page5/page5.html"><div class="square color">5</div></a>
+                        <a href="../page6/page6.html"><div class="square color">6</div></a>
+                        <a href="../page7/page7.html"><div class="square color">7</div></a>
+                        <a href="../page8/page8.html"><div class="square">8</div></a>
+                        <a href="../page9/page9.html"><div class="square">9</div></a>
+                        <a href="../page10/page10.html"><div class="square">10</div></a>
+                    </div>
+                </div>
+    
+                <a href="../../index.html" class="glav">Главная</a>
+                <button class="hamburger navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="../../img/menu.png" alt="bars">
+                </button>
+                
+            
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <img src="../../img/light.png" alt="back" class="background" style="top: 60%;">
+        
+        <div class="container">
+            <h1 class="title slide-in">7. CSS анимации </h1>
+            <div class="texts">
+            <p class="text slide-in2">CSS-анимации позволяют анимировать переходы от одной конфигурации CSS стилей к другой. CSS-анимации состоят из двух компонентов: стилевое  описание анимации и набор ключевых кадров, определяющих начальное,  конечное и, возможно, промежуточное состояние анимируемых стилей.</p>
+            <p class="text slide-in2">Есть три преимущества CSS-анимации перед традиционными способами: <br> 
+                1. &nbsp;&nbsp;&nbsp;Простота использования для простых анимаций; вы можете создать анимацию, не зная JavaScript. <br>
+                2. Анимации будут хорошо работать даже при умеренных нагрузках системы. Простые анимации на JavaScript, если они плохо написаны, часто  выполняются плохо. Движок может использовать frame-skipping и другие  техники, чтобы сохранить производительность на таком высоком уровне. <br>
+                3. Позволяет браузеру контролировать последовательность анимации, тем  самым оптимизируя производительность и эффективность браузера. Например, уменьшая частоту обновления кадров анимации в непросматриваемых в  данный момент вкладках.</p>
+            </div>
+                <h1 class="title slide-in1" style="text-align: left;">Конфигурирование анимации</h1>
+
+                <div class="texts">
+                    <p class="text slide-in2">Чтобы создать CSS-анимацию вы должны добавить в стиль элемента, который хотите анимировать, свойство animation или его подсвойства. Это позволит вам настроить ускорение и  продолжительность анимации, а также другие детали того, как анимация  должна протекать. Это не поможет вам настроить внешний вид анимации,  который настраивается с помощью @keyframes.
+                        Свойство animation имеет следующие подсвойства:</p>
+                    
+                    <p class="text slide-in10"><span class="purple">animation-name</span> <br>
+                    Определяет имя @keyframes, настраивающего кадры анимации.</p>  
+                    <p class="text slide-in10"><span class="purple">animation-duration</span> <br>
+                    Определяет время, в течение которого должен пройти один цикл анимации.</p> 
+                    <p class="text slide-in10"><span class="purple">animation-timing-function</span> <br>
+                    Настраивает ускорение анимации.</p>    
+                    <p class="text slide-in10"><span class="purple">animation-delay</span> <br>
+                    Настраивает задержку между временем загрузки элемента и временем начала анимации.</p>
+                    <p class="text slide-in10"><span class="purple">animation-iteration-count</span> <br>
+                    Определяет количество повторений анимации; вы можете использовать значение infinite для бесконечного повторения анимации.</p>
+                    <p class="text slide-in10"><span class="purple">animation-direction</span> <br>
+                    Даёт возможность при каждом повторе анимации идти по альтернативному пути, либо сбросить все значения и повторить анимацию.</p>
+                    <p class="text slide-in10"><span class="purple">animation-fill-mode</span> <br>
+                    Настраивает значения, используемые анимацией, до и после исполнения.</p>
+                    <p class="text slide-in10"><span class="purple">animation-play-state</span> <br>
+                        Позволяет приостановить и возобновить анимацию.</p>
+                </div>
+                <div class="button-container slide-in10">
+                    <button class="animated-button button-1">Наведи на меня 1</button>
+                    <button class="animated-button button-2">Наведи на меня 2</button>
+                    <button class="animated-button button-3">Наведи на меня 3</button>
+                </div>
+                <div class="texts slide-in10">
+                    <p class="text">В данном коде создаются три анимированные кнопки, которые перемещаются горизонтально по экрану. Каждая кнопка имеет свой класс и анимацию, что позволяет им двигаться с задержкой:</p>
+                    
+                    <p class="text">
+                        <span class="purple slide-in10">&lt;button class="animated-button button-1"&gt;</span> Наведи на меня 1 <span class="purple">&lt;/button&gt;</span> <br>
+                        <span class="purple slide-in10">&lt;button class="animated-button button-2"&gt;</span> Наведи на меня 2 <span class="purple">&lt;/button&gt;</span> <br>
+                        <span class="purple slide-in10">&lt;button class="animated-button button-3"&gt;</span> Наведи на меня 3 <span class="purple">&lt;/button&gt;</span>
+                    </p>
+                    
+                    <p class="text slide-in9">Каждая кнопка имеет класс <span class="purple">animated-button</span>, который отвечает за общие стили, и уникальный класс <span class="purple">button-1</span>, <span class="purple">button-2</span>, <span class="purple">button-3</span>, позволяющий применять индивидуальные стили и анимацию:</p>
+                    
+                    <p class="text"><span class="purple slide-in10">.animated-button { </span> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">padding: 15px 30px;</span> - позволяет сделать внутренние отступы в кнопке <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">background-color: #3498db;</span> - задает цвет заднего фона <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">color: white;</span> - задает цвет текста <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">border: none;</span> - убирает границы <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">border-radius: 10px;</span> - сглаживает края <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">cursor: pointer;</span> - делает при наведении, чтобы мышка наводилась <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">position: absolute;</span> - задает абсолютную позицию над всеми элементами <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">animation: move 4s linear infinite alternate;</span> - делает анимацию длиной в 4 секунды, которая идет бесконечно <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;     <span class="purple">transition: all 0.3s;</span> - задает переход всем элементам в 0.3 секунды                      <br>
+                        <span class="purple">}</span></p>
+                    
+                    <p class="text"><span class="purple slide-in10">@keyframes move { </span> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple"> 0% { left: 0; } </span> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; <span class="purple">100% { left: calc(100% - 265px); } </span> - делает анимацию от левого края до правого края + -265 пикселей <br>
+                        <span class="purple">}</span></p>
+                    
+                    <p class="text">Каждая кнопка также имеет <span class="purple slide-in10">animation-delay</span>, что позволяет им двигаться с различной задержкой, создавая эффект «лестницы»:</p>
+                    
+                    <p class="text">                    <span class="purple slide-in10">.button-1 {    <br>                     
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 0.5s; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-family: "Montserrat", sans-serif; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: 140px; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 1s; <br>
+                        }</span><br><br>
+                    <span class="purple slide-in10">.button-2 {    <br>                     
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 0.5s; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-family: "Montserrat", sans-serif; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: 140px; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 1s; <br>
+                        }</span><br> <br>
+                        <span class="purple slide-in10">.button-3 {    <br>                     
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 0.5s; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;font-family: "Montserrat", sans-serif; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;top: 140px; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;animation-delay: 1s; <br>
+                            }</span>
+                        <p class="title slide-in10" style="text-align: left;">Псевдоклассы</p>
+                        <p class="text">Псевдоклассы <span class="purple">:hover</span> и <span class="purple">:active</span> используются в CSS для стилизации элементов в зависимости от их состояния, что помогает улучшить взаимодействие с пользователем.</p>
+                        <p class="text">
+                            <span class="purple slide-in10">:active</span> — это псевдокласс, который применяется в момент нажатия на элемент. Он позволяет создавать эффекты, которые делают интерфейс более отзывчивым. Например, изменение размера кнопки или ее цвета при нажатии помогает пользователю понять, что действие было зарегистрировано. В вашем примере:
+                        </p>
+                        <p class="text">
+                            <span class="purple slide-in10">:hover</span> — это псевдокласс, который применяется к элементу, когда курсор мыши находится над ним. Это состояние позволяет разработчикам изменять стиль элемента, чтобы визуально обозначить, что он интерактивен. Например, можно изменить цвет фона, размер текста или добавить тень, чтобы кнопка выглядела более привлекательно. Пример использования:
+                        </p>
+                        <p class="text">
+                        <span class="purple slide-in10">.animated-button:hover {<br>                     
+                            &nbsp;&nbsp;&nbsp;&nbsp;background-color: #FF00E5;<br>
+                            }</span><br><br>
+
+                        <span class="purple slide-in10">.animated-button:active {    <br>                     
+                            &nbsp;&nbsp;&nbsp;&nbsp;transform: scale(0.97);<br>
+                            }</span><br></p>
+
+                        <p class="text slide-in9">
+                            Здесь кнопка уменьшится в размере на 3% при нажатии, изменяется задний фон, что создаст эффект "нажатия". Это делает взаимодействие с кнопкой более интуитивным и приятным для пользователя.
+                        </p>
+
+                    <p class="text slide-in9">Используя данный код у вас получится создать такие же анимации на вашем сайте :3</p>
+                </div>
+            <div class="div-button slide-in9" style="margin-top: 50px;">
+                <a href="../../Курсы/page8/page8.html" class="button">Следующий шаг <img src="../../img/arrow.png" alt="arrow" class="arrow"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <a href="../../index.html" class="josefin footer-frontdev">FRONTDEV</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const btn = document.getElementById("navbar-toggler");
+    const menus = document.querySelectorAll(".menu");
+    
+    btn.addEventListener('click', () => {
+        for (let el of menus) {
+            if (el.classList.contains("show")) {
+                // Если меню открыто, добавляем класс для анимации закрытия
+                el.classList.remove("show");
+                el.classList.add("slide-out");
+                
+                // Удаляем класс slide-out после завершения анимации
+                setTimeout(() => {
+                    el.classList.remove("slide-out");
+                }, 300); // Время анимации
+            } else {
+                // Если меню закрыто, добавляем класс show для анимации открытия
+                el.classList.add("show");
+            }
+        }
+    });
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+
+    var elements = document.querySelectorAll('.slide-in9');
+
+
+    for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var position = element.getBoundingClientRect();
+
+
+    if (position.top < window.innerHeight) {
+    element.classList.add('appear');
+    }
+}
+});
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+
+    var elements = document.querySelectorAll('.slide-in10');
+
+
+    for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var position = element.getBoundingClientRect();
+
+
+    if (position.top < window.innerHeight) {
+    element.classList.add('appear');
+    }
+}
+});
+</script>
+
+</body>
+</html>

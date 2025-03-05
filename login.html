@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="null.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.svg">
+    <title>FRONTDEV</title>
+</head>
+<body>
+    <img src="img/light.png" alt="light" class="background55">
+    <img src="img/html.png" alt="html" class="background66 slide-in66">
+    <a href="index.html"><img src="img/exit.png" class="reg-img" alt="exit"></a>
+    <main class="login">
+        <form id="myForm2" style="margin-left: 20px; margin-right: 20px;">
+            <div class="form2 slide-in">
+                <label for="input1" class="label-style2 montserrat">Ваш email</label>
+                <input type="email" required id="input1" class="input-style2 montserrat">
+        
+                <label for="input3" class="label-style2 montserrat">Пароль</label>
+                <input type="password" required id="input3" class="input-style2 montserrat">
+        
+                <button type="submit" class="submit-style2 montserrat">Войти</button>
+
+                <div class="input-text montserrat">Нет аккаунта? <a href="registration.html" style="color: #FF00E6;">Зарегистрируйтесь</a>!</div>
+            </div>
+        </form>
+        <script>
+            document.getElementById("myForm2").addEventListener("submit", function(event) {
+                event.preventDefault(); // Останавливаем стандартную отправку формы
+        
+                let input1 = document.getElementById("input1").value.trim();
+                let input3 = document.getElementById("input3").value.trim();
+    
+        
+                if (!input1 || !input3) {
+                    alert("Пожалуйста, заполните все поля!");
+                } else {
+                    window.location.href = "index.html#programm"; // Редирект на другую страницу
+                }
+            });
+        </script>  
+    </main>
+</body>
+</html>

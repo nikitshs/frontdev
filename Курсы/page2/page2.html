@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../null.css">
+    <link rel="stylesheet" href="../footer-header.css">
+    <link rel="stylesheet" href="../allStyle.css">
+    <link rel="stylesheet" href="../../animations.css">
+    <link rel="icon" href="../../img/logo.svg">
+    <title>FRONTDEV - Курс 2</title>
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <div class="cont2">
+                <a href="../../index.html"><h1 class="logo josefin">FRONTDEV</h1></a>
+                <div class="progress-bar menu">
+                    <p>Ваш прогресс</p>
+                    <div class="squares">
+                        <a href="../page1/page1.html"><div class="square color">1</div></a>
+                        <a href="../page2/page2.html"><div class="square color">2</div></a>
+                        <a href="../page3/page3.html"><div class="square">3</div></a>
+                        <a href="../page4/page4.html"><div class="square">4</div></a>
+                        <a href="../page5/page5.html"><div class="square">5</div></a>
+                        <a href="../page6/page6.html"><div class="square">6</div></a>
+                        <a href="../page7/page7.html"><div class="square">7</div></a>
+                        <a href="../page8/page8.html"><div class="square">8</div></a>
+                        <a href="../page9/page9.html"><div class="square">9</div></a>
+                        <a href="../page10/page10.html"><div class="square">10</div></a>
+                    </div>
+                </div>
+    
+                <a href="../../index.html" class="glav">Главная</a>
+                <button class="hamburger navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="../../img/menu.png" alt="bars">
+                </button>
+                
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <img src="../../img/light.png" alt="back" class="background">
+        <img src="../../img/bggg.png" alt="back" class="background1" >
+        <div class="container">
+            <h1 class="title slide-in" style="margin-bottom: -30px;">2. HTML</h1>
+            <h1 class="title slide-in1">Структура HTML документа и основные теги</h1>
+            <div class="texts slide-in2">
+                <p class="text">Каждый HTML-документ начинается с декларации типа документа или  «доктайпа». Тип документа необходим, чтобы браузер мог определить версию HTML и правильно отобразить страницу.</p>
+                <p class="text">&lt;!DOCTYPE html&gt;</p>
+                <p class="text">Простейшая HTML-страница состоит как минимум из трёх тегов: &lt;html>, &lt;head> и &lt;body>. Тег &lt;head> обычно содержит заголовок, ключевые слова, описание страницы и другие  служебные данные. Также внутри него подключаются внешние ресурсы,  например, стили. Содержимое этого тега не отображается на странице  напрямую. А в теге &lt;body> хранится содержание страницы, которое отображается в окне браузера.</p>
+                <p class="text">Для подключения стилей к странице существует тег &lt;link>. Для этого у него есть атрибут href в котором задаётся адрес стилевого файла, а значение stylesheet атрибута rel говорит браузеру, что мы подключаем именно стили, а не что-то другое.</p>
+            </div>
+            <div class="middle slide-in2" ><div class="middle2"><img src="../../img/doctype.png" alt="verstka" class="img-middle mobile" style="margin-top: 30px; width: 1032px; max-height: 570px; "></div>
+                <p class="text cent">Пример структуры документа</p>
+            </div>
+            <h1 class="title slide-in9">Основные теги</h1>
+            <div class="texts slide-in10">
+                <p class="text">Все HTML элементы делятся на <span class="purple">две </span> группы:<br/>
+                • блочные (block)<br/>
+                • строчные (inline)
+                </p>
+
+                <p class="text"><span class="purple">Блочные</span> элементы представляют собой большие строительные блоки вашей  веб-страницы. При отображении браузер автоматически добавляет разрыв  строки до и после блочного элемента, при этом он занимает всю доступную  ширину (по умолчанию отображается на веб-странице в виде  прямоугольника), а высота блочного элемента вычисляется браузером  автоматически, исходя из объема его содержимого. Текст в блочных  элементах по умолчанию выравнивается по левому краю.
+                    Обычно блочные элементы используются, чтобы разделить содержимое  веб-страницы на логические блоки (например: верхний колонтитул (шапка  сайта), меню, блок с контентом, нижний колонтитул (footer) и др.).  Блочные элементы нельзя вкладывать в строчные, исключением являются  только ссылки и ячейки таблиц, внутри которых по стандарту HTML5 могут  быть расположены блочные элементы.</p>
+                 <p class="text"><span class="purple">Строчные</span> элементы используются для разметки частей содержимого  элементов. Ширина строчного элемента равна объему содержимого. В отличии от блочных элементов браузер не добавляет разрыв строки до и после  строчного элемента, поэтому, если несколько строчных элементов идут  подряд друг за другом, они располагаются на одной строке и переносятся  на другую строку при необходимости. В большинстве случаев внутрь  строчных элементов допустимо помещать другие строчные элементы,  вставлять блочные элементы внутрь строчных запрещено.</p>   
+            </div>
+            <h1 class="title slide-in9" style="text-align: left;">Строчные теги</h1>
+            <p class="text slide-in10"><span class="purple">&lt;a></span> 		&nbsp;&nbsp;	Создает гиперссылку. <br>		 		 			 		 			 		 		 			
+               <span class="purple"> &lt;b></span> 		&nbsp;&nbsp;	Выделяет текст жирным шрифтом. <br>
+                <span class="purple">&lt;button> </span>	&nbsp;&nbsp;		Создает кнопку. 		<br> 		 			 		 		 			 		 		 			
+                <span class="purple">&lt;i></span> 		&nbsp;&nbsp;	Преобразует текст в курсивный. <br>
+                <span class="purple">&lt;img></span> 	&nbsp;&nbsp;		Определяет изображение.<br>
+                <span class="purple">&lt;input></span> 		&nbsp;&nbsp;	Создает поле для ввода данных. 	<br>	 		 				 		 			
+                <span class="purple">&lt;select></span> 	&nbsp;&nbsp;		Создает выпадающий список. 		<br> 		 			
+                <span class="purple">&lt;span> </span>		&nbsp;&nbsp;	Определяет строчный элемент документа. 	<br>	 		 			
+                <span class="purple">&lt;strong> </span> &nbsp;&nbsp;  Определяет важный текст - преобразует шрифт в полужирный. <br>		 		 				
+                <span class="purple">&lt;textarea></span>  &nbsp;&nbsp;  Создает многострочное текстовое поле. 			 	<br>	 			
+                <span class="purple">&lt;var> 	</span>	&nbsp;&nbsp;	Определяет переменную - выделяет текст курсивом. 	<br>	 		 			
+                <span class="purple">&lt;video> </span>		&nbsp;&nbsp;	Добавляет на страницу видео файл.
+                </p>
+                <h1 class="title slide-in9" style="text-align: left;">Блочные теги</h1>
+                <p class="text slide-in10" style="margin-bottom: 50px;">
+                    <span class="purple">&lt;aside> </span>		&nbsp;&nbsp;	Определяет контент в стороне от содержимого страницы. 		 	<br>	 				 		 			
+                         <span class="purple">&lt;div> </span>			&nbsp;&nbsp;	Определяет раздел документа. 	<br>	 		 				 		 			
+                        <span class="purple"> &lt;footer> </span>		&nbsp;&nbsp;		Нижняя часть документа. 	<br>	 		 			
+                         <span class="purple">&lt;form> </span>			&nbsp;&nbsp;	Определяет HTML форму. 		 	<br>	 			
+                         <span class="purple">&lt;h1> - &lt;h6></span>	&nbsp;&nbsp; 			Определяют HTML заголовки. <br>	 		 			
+                         <span class="purple">&lt;header> 	</span>	&nbsp;&nbsp;		Задает "шапку" сайта или раздела. 	<br>	 		 			 		 		 				 		 			
+                         <span class="purple">&lt;nav> 	</span>		&nbsp;&nbsp;	Определяет группу ссылок для навигации. 	<br>	 		 			
+                         <span class="purple">&lt;ol> 	</span>		&nbsp;&nbsp;	Создает нумерованный(упорядоченный) список. <br>		 		 			
+                         <span class="purple">&lt;p> 	</span>		&nbsp;&nbsp;	Определяет абзац. 		 		 			 	<br>	 			
+                         <span class="purple">&lt;section> 	</span>		&nbsp;&nbsp;	Определяет разделы документа. 		 		<br> 				 		 			
+                         <span class="purple">&lt;ul> 	</span>		&nbsp;&nbsp;	Определяет маркированный(неупорядоченный) список.
+                </p>
+            <div class="div-button slide-in9">
+                <a href="../../Курсы/page3/page3.html" class="button">Следующий шаг <img src="../../img/arrow.png" alt="arrow" class="arrow"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <a href="../../index.html" class="josefin footer-frontdev">FRONTDEV</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const btn = document.getElementById("navbar-toggler");
+    const menus = document.querySelectorAll(".menu");
+    
+    btn.addEventListener('click', () => {
+        for (let el of menus) {
+            if (el.classList.contains("show")) {
+                // Если меню открыто, добавляем класс для анимации закрытия
+                el.classList.remove("show");
+                el.classList.add("slide-out");
+                
+                // Удаляем класс slide-out после завершения анимации
+                setTimeout(() => {
+                    el.classList.remove("slide-out");
+                }, 300); // Время анимации
+            } else {
+                // Если меню закрыто, добавляем класс show для анимации открытия
+                el.classList.add("show");
+            }
+        }
+    });
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+
+    var elements = document.querySelectorAll('.slide-in9');
+
+
+    for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var position = element.getBoundingClientRect();
+
+
+    if (position.top < window.innerHeight) {
+    element.classList.add('appear');
+    }
+}
+});
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+
+    var elements = document.querySelectorAll('.slide-in10');
+
+
+    for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var position = element.getBoundingClientRect();
+
+
+    if (position.top < window.innerHeight) {
+    element.classList.add('appear');
+    }
+}
+});
+</script>
+
+</body>
+</html>
